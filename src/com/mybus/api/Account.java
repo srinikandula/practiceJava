@@ -29,7 +29,7 @@ public class Account {
         this.name = name;
     }
     public String toString(){
-        return String.format("%d#%s#%d", this.getId(), this.getName(), this.getBalance());
+        return String.format("%d#%s#%d"+"\n", this.getId(), this.getName(), this.getBalance());
     }
 
 }
