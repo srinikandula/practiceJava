@@ -10,7 +10,7 @@ import static java.lang.Math.abs;
 public class Main {
 
     public static void main(String[] args) {
-        int[] students = new int[5];
+//        int[] students = new int[5];
         System.out.println("Start...");
         //students[5] = 30;
         try{
