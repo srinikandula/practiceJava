@@ -1,6 +1,8 @@
-package com.mybus.api;
+package com.mybank.harish.api;
 
-import java.io.FileNotFoundException;
+import com.mybank.harish.api.Account;
+import com.mybank.harish.api.InsufficientBalanceException;
+
 import java.io.IOException;
 
 public interface Teller {
