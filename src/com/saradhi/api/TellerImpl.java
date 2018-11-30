@@ -1,11 +1,9 @@
-package com.mybus.api;
-import com.mybus.api.Teller;
+package com.saradhi.api;
 
 import java.io.*;
-import java.util.*;
-
-import static java.lang.System.arraycopy;
-import static java.lang.System.out;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 public class TellerImpl implements Teller {
     @Override
@@ -16,7 +14,7 @@ public class TellerImpl implements Teller {
         a.setName(name);
         //id#name#balance
 //        FileWriter fw = new FileWriter(id+".txt");
-        FileWriter fw = new FileWriter("bank.txt", true);
+        FileWriter fw = new FileWriter("bank1.txt", true);
         List<String>str=new ArrayList<String>(){
 
         };
@@ -27,7 +25,7 @@ public class TellerImpl implements Teller {
 //        list.remove(1);
         System.out.println(list);
         System.out.println(a);
-//        fw.write(list.toString());
+       fw.write(a.toString());
         fw.close();
         return a;
     }
@@ -110,8 +108,8 @@ public class TellerImpl implements Teller {
 //        String[] data = accountInfo.split("#");
         boolean status=true;
         String accountInfo="";
-        BufferedReader fr = new BufferedReader(new FileReader("bank.txt"));
-        Scanner sr = new Scanner(new FileReader("bank.txt"));
+        BufferedReader fr = new BufferedReader(new FileReader("bank1.txt"));
+        Scanner sr = new Scanner(new FileReader("bank1.txt"));
         while (sr.hasNext()){
            String s= sr.next();
            // System.out.println(s);

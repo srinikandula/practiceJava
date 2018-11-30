@@ -1,8 +1,9 @@
-package com.mybus.api;
-import java.io.*;
+package com.saradhi.api;
+
+import java.io.IOException;
 import java.util.Scanner;
+
 import static java.lang.System.out;
-import static javafx.application.Platform.exit;
 
 public class Bank {
     public static void main(String args[]) throws IOException{
