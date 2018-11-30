@@ -1,4 +1,8 @@
-package com.mybus.api;
+package com.mybank.harish.api;
+
+import com.mybank.harish.api.Account;
+import com.mybank.harish.api.InsufficientBalanceException;
+import com.mybank.harish.api.Teller;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -15,7 +19,8 @@ public class TellerImpl implements Teller {
         a.setId(id);
         a.setName(name);
         //id#name#balance
-        FileWriter fw = new FileWriter("accounts.txt",true);
+
+        FileWriter fw = new FileWriter("bankdata.txt",true);
         fw.write(a.toString());
         fw.close();
         return a;
