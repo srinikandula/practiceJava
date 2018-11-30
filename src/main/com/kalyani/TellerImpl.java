@@ -1,4 +1,4 @@
-package kalyani;
+package com.kalyani;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class TellerImpl implements Teller {
+public class TellerImpl implements com.kalyani.Teller {
     Account acc = new Account();
     ArrayList<Account> al = new ArrayList<>();
     Iterator it = al.iterator();
@@ -19,8 +19,6 @@ public class TellerImpl implements Teller {
         a.setName(name);
         //id#name#balance
         FileWriter fw = new FileWriter(id+".txt",true);
-
-//        FileWriter fw = new FileWriter("accounts.txt",true);
         fw.write(a.toString());
         fw.close();
         return a;
@@ -35,7 +33,6 @@ public class TellerImpl implements Teller {
             balance += amount;
         FileWriter fw = new FileWriter(accountId+".txt");
         accountInfo = String.format("%d#%s#%.2f", Integer.parseInt(data[0]), data[1], balance);
-//        System.out.println("info......"+accountInfo);
         fw.write(accountInfo);
         fw.close();
         System.out.println("Successfull...");

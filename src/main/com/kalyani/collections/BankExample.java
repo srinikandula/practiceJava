@@ -1,9 +1,9 @@
-package bank;
+package com.kalyani.collections;
 
 import java.util.Scanner;
 
 public class BankExample{
-    public static void main(String[] args){
+    public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
         Teller obj = new TellerImpl();
         int choice = 0;

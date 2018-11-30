@@ -1,4 +1,4 @@
-package bank;
+package com.kalyani.collections;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -20,8 +20,8 @@ public class TellerImpl implements Teller{
         Iterator it = al.iterator();
         while(it.hasNext()){
             Account account = (Account)it.next();
-            if(account.accountId == accountId){
-                balance = account.balance;
+            if(account.getAccountId() == accountId){
+                balance = account.getBalance();
             }
         }
         return balance;
@@ -30,11 +30,13 @@ public class TellerImpl implements Teller{
         Iterator it = al.iterator();
         while(it.hasNext()){
             Account acc1 = (Account)it.next();
-            if(acc1.accountId == accountId){
-                acc1.balance += amount;
+            if(acc1.getAccountId() == accountId){
+                acc1.setBalance(acc1.getBalance() + amount);
                 System.out.println("Cash deposited...");
                 System.out.println("Account balance is...."+acc1);
             }
         }
     }
+
+
 }

@@ -1,11 +1,11 @@
-package kalyani;
+package com.mybus.api;
 
 import java.io.IOException;
 import java.util.Scanner;
 
 public class Bank {
-    public static void main(String args[]) throws IOException, InsufficientBalanceException {
-        Teller teller = new TellerImpl();
+    public static void main(String args[]) throws IOException, com.kalyani.InsufficientBalanceException {
+        com.kalyani.Teller teller = (com.kalyani.Teller) new com.kalyani.TellerImpl();
         while(true){
             System.out.println("1. Create Account");
             System.out.println("2. Cash Withdrawl");

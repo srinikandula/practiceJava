@@ -1,4 +1,4 @@
-package kalyani;
+package com.kalyani;
 
 public class InsufficientBalanceException extends Exception{
     private String message;

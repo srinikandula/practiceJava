@@ -1,4 +1,4 @@
-package com.mybus.api;
+package com.kalyani;
 
 import java.io.IOException;
 import java.util.Scanner;
