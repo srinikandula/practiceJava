@@ -30,6 +30,7 @@ public class Account {
     }
     public String toString(){
         return String.format("%d#%s#%d"+"\n", this.getId(), this.getName(), this.getBalance());
+
     }
 
 }
