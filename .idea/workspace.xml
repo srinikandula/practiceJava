@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="b92c9ed9-cfef-427c-8c9a-4551f00721e9" name="Default" comment="">
       <change afterPath="$PROJECT_DIR$/src/com/mybus/api/ListExample.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/mybus/api/MapExample.java" afterDir="false" />
@@ -8,9 +9,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/practiceJava/com/mybus/api/TellerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/practiceJava/com/mybus/api/TellerImpl.class" afterDir="false" />
     </list>
+=======
+    <list default="true" id="b92c9ed9-cfef-427c-8c9a-4551f00721e9" name="Default" comment="" />
+>>>>>>> 1d8b00d42c250b06220f25a82cdbaeabc783d435
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,48 +21,79 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mybus/api/Main.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bankdata.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mybank/harish/api/Account.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="504">
               <caret line="33" selection-start-line="12" selection-start-column="8" selection-end-line="33" />
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="175">
+              <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+>>>>>>> 1d8b00d42c250b06220f25a82cdbaeabc783d435
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#540#541#0" expanded="true" />
               </folding>
+=======
+            <state>
+              <caret column="16" selection-start-column="16" selection-end-column="16" />
+>>>>>>> acb0a55327ba2e595a96ff6fc709f721e74372b0
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Teller.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mybus/api/Teller.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/mybank/harish/api/Bank.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="90">
               <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="165">
+              <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+=======
+            <state relative-caret-position="195">
+              <caret line="16" column="47" lean-forward="true" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+>>>>>>> acb0a55327ba2e595a96ff6fc709f721e74372b0
+>>>>>>> 1d8b00d42c250b06220f25a82cdbaeabc783d435
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TellerImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mybus/api/TellerImpl.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mybank/harish/api/InsufficientBalanceException.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="252">
               <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+=======
+            <state>
+              <caret column="15" selection-start-column="15" selection-end-column="15" />
+>>>>>>> 1d8b00d42c250b06220f25a82cdbaeabc783d435
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mybank/harish/api/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+            <state>
+              <caret column="17" selection-start-column="17" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="ListExample.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/mybus/api/ListExample.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -98,6 +132,17 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
               <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mybank/harish/api/Teller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+<<<<<<< HEAD
+              <caret column="15" selection-start-column="15" selection-end-column="15" />
+=======
+              <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
+>>>>>>> acb0a55327ba2e595a96ff6fc709f721e74372b0
+>>>>>>> 1d8b00d42c250b06220f25a82cdbaeabc783d435
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,32 +150,63 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InsufficientBalanceException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mybus/api/InsufficientBalanceException.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mybank/harish/api/TellerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+<<<<<<< HEAD
+            <state relative-caret-position="255">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+=======
+            <state>
+              <caret column="18" selection-start-column="18" selection-end-column="18" />
               <folding>
+<<<<<<< HEAD
                 <element signature="e#181#182#0" expanded="true" />
                 <element signature="e#231#232#0" expanded="true" />
+=======
+                <element signature="imports" expanded="true" />
+>>>>>>> 1d8b00d42c250b06220f25a82cdbaeabc783d435
               </folding>
+>>>>>>> acb0a55327ba2e595a96ff6fc709f721e74372b0
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Account.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mybus/api/Account.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/34678.txt">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="324">
               <caret line="30" column="26" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="26" />
               <folding>
                 <element signature="e#532#533#0" expanded="true" />
                 <element signature="e#629#630#0" expanded="true" />
               </folding>
+=======
+            <state>
+              <caret column="12" selection-start-column="12" selection-end-column="12" />
+>>>>>>> 1d8b00d42c250b06220f25a82cdbaeabc783d435
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/66646.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OutFile.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+>>>>>>> 1d8b00d42c250b06220f25a82cdbaeabc783d435
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -142,6 +218,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -149,34 +230,39 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/com/mybus/api/Main.java" />
         <option value="$PROJECT_DIR$/src/com/mybus/api/Account.java" />
-        <option value="$PROJECT_DIR$/src/com/mybus/api/InsufficientBalanceException.java" />
         <option value="$PROJECT_DIR$/src/com/mybus/api/Teller.java" />
         <option value="$PROJECT_DIR$/src/com/mybus/api/BankImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/mybus/api/Bank.java" />
-        <option value="$PROJECT_DIR$/src/com/mybus/api/TellerImpl.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/com/mybus/api/ListExample.java" />
         <option value="$PROJECT_DIR$/src/com/mybus/api/SetExample.java" />
         <option value="$PROJECT_DIR$/src/com/mybus/api/MapExample.java" />
+=======
+        <option value="$PROJECT_DIR$/src/com/mybus/api/InsufficientBalanceException.java" />
+        <option value="$PROJECT_DIR$/src/com/mybus/api/TellerImpl.java" />
+        <option value="$PROJECT_DIR$/34678.txt" />
+        <option value="$PROJECT_DIR$/src/com/mybus/api/Bank.java" />
+        <option value="$PROJECT_DIR$/src/com/mybank/api/TellerImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/mybank/api/Account.java" />
+        <option value="$PROJECT_DIR$/bankdata.txt" />
+        <option value="$PROJECT_DIR$/src/com/mybank/api/Bank.java" />
+        <option value="$PROJECT_DIR$/src/com/mybank/harish/api/Account.java" />
+        <option value="$PROJECT_DIR$/src/com/mybank/harish/api/Bank.java" />
+        <option value="$PROJECT_DIR$/src/com/mybank/harish/api/InsufficientBalanceException.java" />
+        <option value="$PROJECT_DIR$/src/com/mybank/harish/api/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/mybank/harish/api/Teller.java" />
+        <option value="$PROJECT_DIR$/src/com/mybank/harish/api/TellerImpl.java" />
+>>>>>>> 1d8b00d42c250b06220f25a82cdbaeabc783d435
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
   </component>
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="812" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="25" />
+    <option name="width" value="1366" />
+    <option name="height" value="743" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -185,9 +271,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="AndroidView" />
+=======
+>>>>>>> 1d8b00d42c250b06220f25a82cdbaeabc783d435
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -195,15 +284,55 @@
               <item name="practiceJava" type="b2602c69:ProjectViewProjectNode" />
               <item name="practiceJava" type="462c0819:PsiDirectoryNode" />
             </path>
+<<<<<<< HEAD
+=======
+            <path>
+              <item name="practiceJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practiceJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="practiceJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practiceJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+              <item name="bank" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="practiceJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practiceJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> acb0a55327ba2e595a96ff6fc709f721e74372b0
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="practiceJava" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practiceJava" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+>>>>>>> 1d8b00d42c250b06220f25a82cdbaeabc783d435
           </expand>
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
+=======
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+<<<<<<< HEAD
+      <pane id="AndroidView" />
+=======
+>>>>>>> acb0a55327ba2e595a96ff6fc709f721e74372b0
+>>>>>>> 1d8b00d42c250b06220f25a82cdbaeabc783d435
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543560187975" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -227,7 +356,7 @@
   </component>
   <component name="RunManager" selected="Application.MapExample">
     <configuration name="Bank" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mybus.api.Bank" />
+      <option name="MAIN_CLASS_NAME" value="com.mybank.harish.api.Bank" />
       <module name="practiceJava" />
       <extension name="coverage">
         <pattern>
@@ -235,6 +364,22 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mybus.api.Main" />
+      <module name="practiceJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mybus.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="ListExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mybus.api.ListExample" />
@@ -252,6 +397,9 @@
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mybus.api.Main" />
@@ -263,6 +411,7 @@
         </pattern>
       </extension>
     </configuration>
+<<<<<<< HEAD
     <configuration name="MapExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mybus.api.MapExample" />
       <module name="practiceJava" />
@@ -304,6 +453,12 @@
       <item itemvalue="Application.ListExample" />
       <item itemvalue="Application.SetExample" />
       <item itemvalue="Application.MapExample" />
+=======
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Bank" />
+      <item itemvalue="Application.Main (1)" />
+>>>>>>> 1d8b00d42c250b06220f25a82cdbaeabc783d435
     </list>
     <recent_temporary>
       <list>
@@ -324,39 +479,84 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1542693061905</updated>
+<<<<<<< HEAD
       <workItem from="1542693065541" duration="8329000" />
       <workItem from="1543306215265" duration="2156000" />
+=======
+      <workItem from="1542693065541" duration="7699000" />
+      <workItem from="1542878492665" duration="16900000" />
+      <workItem from="1542952425144" duration="19542000" />
+      <workItem from="1543298393161" duration="678000" />
+      <workItem from="1543305075632" duration="1084000" />
+      <workItem from="1543559482629" duration="704000" />
+>>>>>>> 1d8b00d42c250b06220f25a82cdbaeabc783d435
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="10485000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="812" extended-state="0" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="46708000" />
+=======
+    <option name="totallyTimeSpent" value="46607000" />
+>>>>>>> acb0a55327ba2e595a96ff6fc709f721e74372b0
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="27" width="1366" height="741" extended-state="6" />
+>>>>>>> 1d8b00d42c250b06220f25a82cdbaeabc783d435
     <layout>
-      <window_info anchor="right" id="Palette" order="6" />
-      <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="bottom" id="Messages" order="4" />
-      <window_info anchor="right" id="Palette&#9;" order="1" />
-      <window_info id="Image Layers" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.3292683" />
-      <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="1" />
-      <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.25" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="UI Designer" order="1" />
-      <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24318182" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.3966942" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.3289256" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Messages" order="4" weight="0.3289256" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.7057851" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" weight="0.3289256" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Palette&#9;" order="1" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Palette" order="6" />
+      <window_info anchor="right" id="Commander" order="7" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="10" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="0" />
+      <window_info id="UI Designer" order="1" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+<<<<<<< HEAD
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="right" id="Commander" order="7" weight="0.4" />
@@ -365,14 +565,42 @@
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="6" />
     </layout>
+=======
+      <window_info id="Image Layers" order="4" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24318182" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.3289256" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.3289256" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Messages" order="4" weight="0.3289256" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.44132233" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" weight="0.3289256" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Palette&#9;" order="1" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Palette" order="6" />
+      <window_info anchor="right" id="Commander" order="7" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="10" />
+    </layout-to-restore>
+>>>>>>> 1d8b00d42c250b06220f25a82cdbaeabc783d435
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/com/mybus/api/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -433,12 +661,17 @@
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/lang/System.java">
+=======
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/lang/System.java" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+>>>>>>> 1d8b00d42c250b06220f25a82cdbaeabc783d435
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="17" />
+        <state relative-caret-position="15">
+          <caret line="1" column="5" selection-start-line="1" selection-end-line="1" selection-end-column="5" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -452,59 +685,201 @@
           <caret line="24" column="17" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="17" />
         </state>
       </provider>
+=======
+    <entry file="file://$PROJECT_DIR$/232.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mybus/api/Account.java">
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/com/mybank/api/InsufficientBalanceException.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/mybank/api/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/mybank/api/Teller.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/mybank/api/TellerImpl.java" />
+    <entry file="file://$PROJECT_DIR$/34678.txt">
       <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/66646.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mybank/api/Account.java" />
+    <entry file="file://$PROJECT_DIR$/OutFile.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+>>>>>>> 1d8b00d42c250b06220f25a82cdbaeabc783d435
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mybank/api/Bank.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/mybank/api/harish.package/Account.java" />
+    <entry file="file://$PROJECT_DIR$/bankdata.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mybank/harish/api/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mybank/harish/api/Teller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/com/mybank/api/InsufficientBalanceException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mybank/api/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="324">
           <caret line="30" column="26" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="26" />
           <folding>
             <element signature="e#532#533#0" expanded="true" />
             <element signature="e#629#630#0" expanded="true" />
+=======
+        <state relative-caret-position="30">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+>>>>>>> 1d8b00d42c250b06220f25a82cdbaeabc783d435
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mybus/api/InsufficientBalanceException.java">
+    <entry file="file://$PROJECT_DIR$/src/com/mybank/api/Teller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mybank/api/TellerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/34678.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/66646.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mybank/api/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
           <folding>
+<<<<<<< HEAD
             <element signature="e#181#182#0" expanded="true" />
             <element signature="e#231#232#0" expanded="true" />
+=======
+            <element signature="e#533#534#0" expanded="true" />
+            <element signature="e#633#634#0" expanded="true" />
+>>>>>>> 1d8b00d42c250b06220f25a82cdbaeabc783d435
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mybus/api/Main.java">
+    <entry file="file://$PROJECT_DIR$/OutFile.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mybank/api/Bank.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="504">
           <caret line="33" selection-start-line="12" selection-start-column="8" selection-end-line="33" />
+=======
+        <state relative-caret-position="240">
+          <caret line="61" column="48" lean-forward="true" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
+>>>>>>> acb0a55327ba2e595a96ff6fc709f721e74372b0
+>>>>>>> 1d8b00d42c250b06220f25a82cdbaeabc783d435
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mybus/api/Teller.java">
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/com/mybank/harish/api/TellerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mybank/harish/api/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/com/mybank/api/harish.package/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bankdata.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mybank/harish/api/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mybank/harish/api/Teller.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="90">
           <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+=======
+        <state>
+          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
+>>>>>>> 1d8b00d42c250b06220f25a82cdbaeabc783d435
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mybus/api/Bank.java">
+    <entry file="file://$PROJECT_DIR$/src/com/mybank/harish/api/TellerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="180">
           <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+=======
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+>>>>>>> acb0a55327ba2e595a96ff6fc709f721e74372b0
+>>>>>>> 1d8b00d42c250b06220f25a82cdbaeabc783d435
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#540#541#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/com/mybus/api/TellerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -536,13 +911,34 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+=======
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/src/com/mybank/harish/api/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+>>>>>>> acb0a55327ba2e595a96ff6fc709f721e74372b0
+    <entry file="file://$PROJECT_DIR$/src/com/mybank/harish/api/InsufficientBalanceException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
+>>>>>>> 1d8b00d42c250b06220f25a82cdbaeabc783d435
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mybank/harish/api/Bank.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="165">
+          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+=======
+        <state relative-caret-position="195">
+          <caret line="16" column="47" lean-forward="true" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+>>>>>>> acb0a55327ba2e595a96ff6fc709f721e74372b0
         </state>
       </provider>
     </entry>
