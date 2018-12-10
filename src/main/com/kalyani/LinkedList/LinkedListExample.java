@@ -54,23 +54,16 @@ class LinkedList{
     private Node rootNode;// head of list
     public void add(int value){
         Node node = new Node();
-
+        node.setValue(value);
         if(rootNode == null){
-            node.setValue(value);
-            node.setAddress(node);
             rootNode = node;
         }else {
-            Node leafNode = rootNode.getAddress();
+            Node leafNode = rootNode;
             while(leafNode.getAddress() != null){
                 leafNode = leafNode.getAddress();
             }
             leafNode.setAddress(node);
-
-//            System.out.println("else......"+ Arrays.toString(rootNode));
-
         }
-
-
     }
 
     public void getList() {
