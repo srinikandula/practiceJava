@@ -68,7 +68,7 @@ class LinkedList{
 
     public void getList() {
         Node n = rootNode;
-        while (n != null)
+            while (n != null)
         {
             System.out.print(n.getValue()+" ++++++++======");
             n = n.getAddress();

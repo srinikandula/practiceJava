@@ -1,7 +1,4 @@
-package com.mybank.harish.api;
-
-import com.mybank.harish.api.Account;
-import com.mybank.harish.api.InsufficientBalanceException;
+package harish;
 
 import java.io.IOException;
 
