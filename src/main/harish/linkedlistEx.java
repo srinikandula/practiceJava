@@ -23,9 +23,10 @@ public class linkedlistEx {
                     obj.getList();
                     break;
                 case 3:
-                    System.out.println("Enter an element to delete from the list:");
+                    System.out.println("Enter an element(starts from 0) to delete from the list:");
                     key =in.nextInt();
                     obj.deleteKey(key);
+                    System.out.println("Sucessfully deleted");
                     break;
 
             }
@@ -89,7 +90,7 @@ class linkedlist{
         }
         Nodes currentNode = rootNode;
         int counter = 1;
-        while(currentNode.getAddress() != null && counter <= index){
+        while(currentNode.getAddress() != null && counter < index){
             currentNode = currentNode.getAddress();
             counter++;
         }
