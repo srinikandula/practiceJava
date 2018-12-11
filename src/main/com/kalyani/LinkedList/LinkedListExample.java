@@ -1,9 +1,6 @@
 package com.kalyani.LinkedList;
 
-import java.util.Arrays;
 import java.util.Scanner;
-import lombok.Getter;
-import lombok.Setter;
 
 public class LinkedListExample{
     public static void main(String[] args){
@@ -29,7 +26,7 @@ public class LinkedListExample{
 }
 class Node {
     private int value;
-    private Node address;
+    private Node next;
 
 
     public void setValue(int value) {
@@ -40,12 +37,12 @@ class Node {
         return this.value;
     }
 
-    public Node getAddress() {
-        return this.address;
+    public Node getNext() {
+        return this.next;
     }
 
-    public void setAddress(Node node) {
-        this.address = node;
+    public void setNext(Node node) {
+        this.next = node;
     }
 }
 
@@ -59,10 +56,10 @@ class LinkedList{
             rootNode = node;
         }else {
             Node leafNode = rootNode;
-            while(leafNode.getAddress() != null){
-                leafNode = leafNode.getAddress();
+            while(leafNode != null){
+                leafNode = leafNode.getNext();
             }
-            leafNode.setAddress(node);
+            leafNode.setNext(node);
         }
     }
 
@@ -71,7 +68,7 @@ class LinkedList{
         while (n != null)
         {
             System.out.print(n.getValue()+" ++++++++======");
-            n = n.getAddress();
+            n = n.getNext();
         }
     }
 }

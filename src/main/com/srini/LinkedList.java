@@ -3,25 +3,20 @@ package com.srini;
 import lombok.Getter;
 import lombok.Setter;
 
-@Getter
-@Setter
-class Node {
-    private int value;
-    private Node address;
-}
 
 public class LinkedList{
     private Node rootNode;
 
+    public boolean isEmpty(){
+        return rootNode == null;
+    }
     public void add(int value){
         Node node = new Node();
         node.setValue(value);
-
-
         if(rootNode == null){
             rootNode = node;
         } else {
-            Node leafNode = rootNode.getAddress();
+            Node leafNode = rootNode;
             while(leafNode.getAddress() != null){
                 leafNode = leafNode.getAddress();
             }
@@ -33,10 +28,13 @@ public class LinkedList{
             return rootNode;
         }
         Node currentNode = rootNode;
-        int counter = 1;
-        while(currentNode.getAddress() != null && counter <= index){
+        int counter = 0;
+        while(currentNode.getAddress() != null && counter < index){
             currentNode = currentNode.getAddress();
             counter++;
+        }
+        if(counter < index){
+            return null;
         }
         return currentNode;
     }
@@ -46,13 +44,19 @@ public class LinkedList{
             rootNode = rootNode.getAddress();
         }
         Node currentNode = rootNode;
-        int counter = 1;
-        while(currentNode.getAddress() != null && counter <= index){
+        int counter = 0;
+        Node prevNode = null;
+        while(currentNode.getAddress() != null && counter < index){
+            prevNode = currentNode;
             currentNode = currentNode.getAddress();
             counter++;
         }
-        currentNode.setAddress(currentNode.getAddress().getAddress());
+        if(prevNode != null){
+            prevNode.setAddress(currentNode.getAddress());
+        }
     }
+
+
     public void display(){
         Node currentNode = rootNode;
         while(currentNode != null){
