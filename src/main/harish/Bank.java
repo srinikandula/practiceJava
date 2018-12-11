@@ -1,4 +1,4 @@
-package com.mybank.harish.api;
+package harish;
 
 import java.io.*;
 import java.io.IOException;

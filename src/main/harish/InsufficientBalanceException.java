@@ -1,4 +1,4 @@
-package com.mybank.harish.api;
+package harish;
 
 public class InsufficientBalanceException extends Exception{
     private String message;
