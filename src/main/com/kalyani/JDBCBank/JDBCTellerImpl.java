@@ -1,4 +1,4 @@
-package com.srini;
+package com.kalyani.JDBCBank;
 
 import com.kalyani.Account;
 import com.kalyani.InsufficientBalanceException;
@@ -12,9 +12,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class JDBCTellerImpl implements Teller {
-    Account acc = new Account();
-    ArrayList<Account> al = new ArrayList<>();
-    Iterator it = al.iterator();
     @Override
     public void createAccount(int id, String name, long balance) throws IOException, SQLException, ClassNotFoundException {
         Connection connection = createConnection();
@@ -40,7 +37,6 @@ public class JDBCTellerImpl implements Teller {
             String updateQuery = String.format("UPDATE Bank SET Balance = %.2f WHERE Id = %d",balance, accountId);
             statement.executeUpdate(updateQuery);
         }
-//        statement1.close();
         statement.close();
         connection.close();
     }
@@ -65,27 +61,10 @@ public class JDBCTellerImpl implements Teller {
     }
 
     @Override
-    public boolean transfer(int sourceAccountId, int destinationAccountId, double amount) throws IOException {
-        BufferedReader fr = new BufferedReader(new FileReader(sourceAccountId+".txt"));
-        String accountInfo = fr.readLine();
-        String[] sourceAccInfo = accountInfo.split("#");
-        double sourceBal = Double.parseDouble(sourceAccInfo[2]);
-        double transferAmt = amount;
-        BufferedReader fr1 = new BufferedReader(new FileReader(destinationAccountId+".txt"));
-        String destInfo = fr1.readLine();
-        String[] destAccInfo = destInfo.split("#");
-        double destBal = Double.parseDouble(destAccInfo[2]);
-        destBal += transferAmt;
-        FileWriter fw = new FileWriter(destinationAccountId+".txt");
-        accountInfo = String.format("%d#%s#%.2f", Integer.parseInt(destAccInfo[0]), destAccInfo[1], destBal);
-        fw.write(accountInfo);
-        fw.close();
-        sourceBal -= amount;
-        FileWriter fw1 = new FileWriter(sourceAccountId+".txt");
-        accountInfo = String.format("%d#%s#%.2f", Integer.parseInt(sourceAccInfo[0]), sourceAccInfo[1], sourceBal);
-        fw1.write(accountInfo);
-        fw1.close();
-        return false;
+    public void transfer(int sourceAccountId, int destinationAccountId, double amount) throws IOException, ClassNotFoundException, SQLException, InsufficientBalanceException {
+        withdraw(amount,sourceAccountId);
+        deposit(amount,destinationAccountId);
+        System.out.println("Transaction is successfull....");
     }
 
     @Override
@@ -96,36 +75,16 @@ public class JDBCTellerImpl implements Teller {
         String query = String.format("SELECT Balance from Bank WHERE Id = %d", accountId);
         ResultSet rs = statement.executeQuery(query);
         if(rs.next()){
-             balance = rs.getInt("Balance");
+            balance = rs.getInt("Balance");
         }
         return balance;
-
-
-
-
-
-/*
-//        BufferedReader fr = new BufferedReader(new FileReader("accounts.txt"));
-        BufferedReader fr = new BufferedReader(new FileReader(accountId+".txt"));
-
-        String line = fr.readLine();
-        while(line != null){
-            System.out.println("line..."+line);
-            String[] data = line.split("#");
-            if(Integer.parseInt(data[0]) == accountId ){
-                balance =  Double.parseDouble(data[2]);
-                break;
-            }
-            line = fr.readLine();
-        }
-*/
     }
 
 
     public Connection createConnection() throws ClassNotFoundException, SQLException {
         Class.forName("org.postgresql.Driver");
         Connection connection = DriverManager.getConnection("jdbc:postgresql://elmer.db.elephantsql.com:5432/umbutuhs",
-                        "umbutuhs", "wpvwb8uzHhVXH4qQJvZXuoDv8Gt9-DBG");
+                "umbutuhs", "wpvwb8uzHhVXH4qQJvZXuoDv8Gt9-DBG");
         return connection;
     }
 }

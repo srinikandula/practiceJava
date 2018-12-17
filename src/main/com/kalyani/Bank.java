@@ -1,10 +1,11 @@
 package com.kalyani;
 
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.Scanner;
 
 public class Bank {
-    public static void main(String args[]) throws IOException, InsufficientBalanceException {
+    public static void main(String args[]) throws IOException, InsufficientBalanceException, SQLException, ClassNotFoundException {
         Teller teller = new TellerImpl();
         while(true){
             System.out.println("1. Create Account");

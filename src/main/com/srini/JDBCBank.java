@@ -44,7 +44,11 @@ public class JDBCBank {
                     accountId = scanner.nextInt();
                     System.out.println("Enter cash to be withdrawn....");
                     amount = scanner.nextDouble();
-                    teller.withdraw(amount,accountId);
+                    try {
+                        teller.withdraw(amount,accountId);
+                    } catch (IOException e) {
+                        System.out.println("Failed to create account");
+                    }
                     System.out.println("The withdrawn amount is....."+amount);
                     break;
                 case 3:
@@ -52,7 +56,11 @@ public class JDBCBank {
                     accountId = scanner.nextInt();
                     System.out.println("Enter cash to deposit....");
                     amount = scanner.nextDouble();
-                    teller.deposit(amount,accountId);
+                    try {
+                        teller.deposit(amount,accountId);
+                    } catch (IOException e) {
+                        System.out.println("Failed to create account");
+                    }
                     break;
                 case 4:
                     System.out.println("Enter account number");
