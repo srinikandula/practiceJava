@@ -1,2 +1,3 @@
 out/**
 *.txt
+/.idea/libraries/postgresql_42_2_5.xml
