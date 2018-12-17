@@ -36,13 +36,33 @@ public class JDBCTellerImpl implements Teller {
             //Statement statement1 = connection.createStatement();
             String updateQuery = String.format("update account set balance = %d where id = %d",balance+amount, accountId);
             int i = statement.executeUpdate(query);
+            if(i !=1){
+                throw new RuntimeException("Invalid account for deposit");
+            }
         }
         statement.close();
         connection.close();
     }
 
+
+    public void deposit(Connection connection, double amount, int accountId) throws IOException, SQLException, ClassNotFoundException {
+        Statement statement = connection.createStatement();
+        String query = String.format("select balance from account where id = %d", accountId);
+        ResultSet rs = statement.executeQuery(query);
+        if(rs.next()){
+            int balance = rs.getInt("balance");
+            //Statement statement1 = connection.createStatement();
+            String updateQuery = String.format("update account set balance = %d where id = %d",balance+amount, accountId);
+            int i = statement.executeUpdate(query);
+            if(i !=1){
+                throw new RuntimeException("Invalid account for deposit");
+            }
+        }
+        statement.close();
+    }
+
     @Override
-    public void withdraw(double amount, int accountId) throws IOException, InsufficientBalanceException, SQLException, ClassNotFoundException {
+    public void withdraw(double amount, double accountId) throws IOException, InsufficientBalanceException, SQLException, ClassNotFoundException {
         Connection connection = createConnection();
         Statement statement = connection.createStatement();
         String query = String.format("select balance from account where id = %d", accountId);
@@ -60,28 +80,34 @@ public class JDBCTellerImpl implements Teller {
         connection.close();
     }
 
+    public void withdraw(Connection connection, double amount, double accountId) throws IOException, InsufficientBalanceException, SQLException, ClassNotFoundException {
+        Statement statement = connection.createStatement();
+        String query = String.format("select balance from account where id = %d", accountId);
+        ResultSet rs = statement.executeQuery(query);
+        if(rs.next()){
+            int balance = rs.getInt("balance");
+            if(balance < amount){
+                //throw
+            }
+            //Statement statement1 = connection.createStatement();
+            String updateQuery = String.format("update account set balance = %d where id = %d",balance-amount, accountId);
+            int i = statement.executeUpdate(query);
+        }
+        statement.close();
+    }
+
     @Override
-    public boolean transfer(int sourceAccountId, int destinationAccountId, double amount) throws IOException {
-        BufferedReader fr = new BufferedReader(new FileReader(sourceAccountId+".txt"));
-        String accountInfo = fr.readLine();
-        String[] sourceAccInfo = accountInfo.split("#");
-        double sourceBal = Double.parseDouble(sourceAccInfo[2]);
-        double transferAmt = amount;
-        BufferedReader fr1 = new BufferedReader(new FileReader(destinationAccountId+".txt"));
-        String destInfo = fr1.readLine();
-        String[] destAccInfo = destInfo.split("#");
-        double destBal = Double.parseDouble(destAccInfo[2]);
-        destBal += transferAmt;
-        FileWriter fw = new FileWriter(destinationAccountId+".txt");
-        accountInfo = String.format("%d#%s#%.2f", Integer.parseInt(destAccInfo[0]), destAccInfo[1], destBal);
-        fw.write(accountInfo);
-        fw.close();
-        sourceBal -= amount;
-        FileWriter fw1 = new FileWriter(sourceAccountId+".txt");
-        accountInfo = String.format("%d#%s#%.2f", Integer.parseInt(sourceAccInfo[0]), sourceAccInfo[1], sourceBal);
-        fw1.write(accountInfo);
-        fw1.close();
-        return false;
+    public boolean transfer(int sourceAccountId, int destinationAccountId, double amount) throws ClassNotFoundException, SQLException, InsufficientBalanceException, IOException {
+        Connection connection = createConnection();
+        try {
+            withdraw(connection , sourceAccountId, amount);
+            deposit(connection, amount, destinationAccountId);
+        }catch (Exception e){
+            connection.rollback();
+        }
+        connection.commit();
+        connection.close();
+        return true;
     }
 
     @Override
