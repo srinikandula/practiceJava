@@ -19,8 +19,9 @@ public class JDBCTellerImpl implements Teller {
     public void createAccount(int id, String name, long balance) throws IOException, SQLException, ClassNotFoundException {
         Connection connection = createConnection();
         Statement statement = connection.createStatement();
-        String query = String.format("insert in to account (id, name, balance) values(%d, %s, %d)", id,name, balance);
-        int i = statement.executeUpdate(query);
+        String query = String.format("INSERT INTO Bank (Id, Name, Balance) values(%d,'%s', %d)", id,name, balance);
+        statement.executeUpdate(query);
+        System.out.println("Inserted records into the table...");
         statement.close();
         connection.close();
     }
@@ -29,9 +30,12 @@ public class JDBCTellerImpl implements Teller {
     public void deposit(double amount, int accountId) throws IOException, SQLException, ClassNotFoundException {
         Connection connection = createConnection();
         Statement statement = connection.createStatement();
-        String query = String.format("select balance from account where id = %d", accountId);
+        Statement statement1 = connection.createStatement();
+
+        String query = String.format("SELECT Balance from Bank WHERE Id = %d", accountId);
         ResultSet rs = statement.executeQuery(query);
         if(rs.next()){
+<<<<<<< HEAD
             int balance = rs.getInt("balance");
             //Statement statement1 = connection.createStatement();
             String updateQuery = String.format("update account set balance = %d where id = %d",balance+amount, accountId);
@@ -39,7 +43,14 @@ public class JDBCTellerImpl implements Teller {
             if(i !=1){
                 throw new RuntimeException("Invalid account for deposit");
             }
+=======
+            double balance = rs.getDouble("Balance");
+            balance = balance+amount;
+            String updateQuery = String.format("UPDATE Bank SET Balance = %.2f WHERE Id = %d",balance, accountId);
+            statement.executeUpdate(updateQuery);
+>>>>>>> 9d4246615c6f75d2a67ff5c6d92cea3f9d87e58f
         }
+//        statement1.close();
         statement.close();
         connection.close();
     }
@@ -65,16 +76,16 @@ public class JDBCTellerImpl implements Teller {
     public void withdraw(double amount, double accountId) throws IOException, InsufficientBalanceException, SQLException, ClassNotFoundException {
         Connection connection = createConnection();
         Statement statement = connection.createStatement();
-        String query = String.format("select balance from account where id = %d", accountId);
+        String query = String.format("SELECT Balance from Bank WHERE Id = %d", accountId);
         ResultSet rs = statement.executeQuery(query);
         if(rs.next()){
-            int balance = rs.getInt("balance");
+            double balance = rs.getInt("balance");
             if(balance < amount){
-                //throw
+                throw new IOException("Insufficient balance");
             }
-            //Statement statement1 = connection.createStatement();
-            String updateQuery = String.format("update account set balance = %d where id = %d",balance-amount, accountId);
-            int i = statement.executeUpdate(query);
+            balance = balance-amount;
+            String updateQuery = String.format("UPDATE Bank SET Balance = %.2f WHERE Id = %d",balance, accountId);
+            statement.executeUpdate(updateQuery);
         }
         statement.close();
         connection.close();
@@ -111,13 +122,26 @@ public class JDBCTellerImpl implements Teller {
     }
 
     @Override
-    public double getBalance(int accountId) throws IOException {
+    public double getBalance(int accountId) throws IOException, SQLException, ClassNotFoundException {
+        int balance =0;
+        Connection connection = createConnection();
+        Statement statement = connection.createStatement();
+        String query = String.format("SELECT Balance from Bank WHERE Id = %d", accountId);
+        ResultSet rs = statement.executeQuery(query);
+        if(rs.next()){
+             balance = rs.getInt("Balance");
+        }
+        return balance;
 
+
+
+
+
+/*
 //        BufferedReader fr = new BufferedReader(new FileReader("accounts.txt"));
         BufferedReader fr = new BufferedReader(new FileReader(accountId+".txt"));
 
         String line = fr.readLine();
-        double balance =0.0;
         while(line != null){
             System.out.println("line..."+line);
             String[] data = line.split("#");
@@ -127,7 +151,7 @@ public class JDBCTellerImpl implements Teller {
             }
             line = fr.readLine();
         }
-        return balance;
+*/
     }
 
 
