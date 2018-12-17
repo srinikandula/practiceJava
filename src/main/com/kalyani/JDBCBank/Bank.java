@@ -36,7 +36,6 @@ public class Bank{
                     } catch (IOException e) {
                         System.out.println("Failed to create account");
                     }
-                    System.out.println("Account has been created");
                     break;
                 case 2:
                     System.out.println("Enter account number");

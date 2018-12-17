@@ -3,6 +3,7 @@ package com.kalyani.JDBCBank;
 import com.kalyani.Account;
 import com.kalyani.InsufficientBalanceException;
 
+import javax.naming.Name;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -15,10 +16,15 @@ public class JDBCTellerImpl implements Teller {
     @Override
     public void createAccount(int id, String name, long balance) throws IOException, SQLException, ClassNotFoundException {
         Connection connection = createConnection();
-        Statement statement = connection.createStatement();
-        String query = String.format("INSERT INTO Bank (Id, Name, Balance) values(%d,'%s', %d)", id,name, balance);
-        statement.executeUpdate(query);
-        System.out.println("Inserted records into the table...");
+        PreparedStatement statement = connection.prepareStatement(String.format("SELECT * from Bank WHERE Id = %d",id));
+        ResultSet rs = statement.executeQuery();
+        if(rs.next()){
+            System.out.println("Account already exists");
+        }else{
+            statement = connection.prepareStatement(String.format("INSERT INTO Bank (Id, Name, Balance) values(%d,'%s', %d)", id,name, balance));
+            statement.executeUpdate();
+            System.out.println("Account has been created");
+        }
         statement.close();
         connection.close();
     }
@@ -27,8 +33,6 @@ public class JDBCTellerImpl implements Teller {
     public void deposit(double amount, int accountId) throws IOException, SQLException, ClassNotFoundException {
         Connection connection = createConnection();
         Statement statement = connection.createStatement();
-        Statement statement1 = connection.createStatement();
-
         String query = String.format("SELECT Balance from Bank WHERE Id = %d", accountId);
         ResultSet rs = statement.executeQuery(query);
         if(rs.next()){
@@ -36,9 +40,11 @@ public class JDBCTellerImpl implements Teller {
             balance = balance+amount;
             String updateQuery = String.format("UPDATE Bank SET Balance = %.2f WHERE Id = %d",balance, accountId);
             statement.executeUpdate(updateQuery);
+            statement.close();
+            connection.close();
+        }else{
+            System.out.println("Account does not exists...!!!!!....");
         }
-        statement.close();
-        connection.close();
     }
 
     @Override
@@ -50,11 +56,14 @@ public class JDBCTellerImpl implements Teller {
         if(rs.next()){
             double balance = rs.getInt("balance");
             if(balance < amount){
-                throw new IOException("Insufficient balance");
+                throw new InsufficientBalanceException("Insufficient balance");
+            }else{
+                balance = balance-amount;
+                String updateQuery = String.format("UPDATE Bank SET Balance = %.2f WHERE Id = %d",balance, accountId);
+                statement.executeUpdate(updateQuery);
             }
-            balance = balance-amount;
-            String updateQuery = String.format("UPDATE Bank SET Balance = %.2f WHERE Id = %d",balance, accountId);
-            statement.executeUpdate(updateQuery);
+        }else{
+            System.out.println("Account does not exists...!!!!!....");
         }
         statement.close();
         connection.close();
@@ -76,10 +85,11 @@ public class JDBCTellerImpl implements Teller {
         ResultSet rs = statement.executeQuery(query);
         if(rs.next()){
             balance = rs.getInt("Balance");
+        }else{
+            System.out.println("Account does not exists...!!!!!....");
         }
         return balance;
     }
-
 
     public Connection createConnection() throws ClassNotFoundException, SQLException {
         Class.forName("org.postgresql.Driver");
